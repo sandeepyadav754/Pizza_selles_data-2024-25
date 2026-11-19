@@ -1,5 +1,5 @@
 # Pizza_selles_data-2024-25
-🍕 Pizza Sales Analysis Dashboard (2024–25)
+ Pizza Sales Analysis Dashboard (2024–25)
 
 1. Project Title
 
@@ -72,3 +72,6 @@ Supports better sales planning, marketing strategies, and business decisions.
 6. Project Outcome
 
 Developed an interactive Power BI dashboard to convert raw pizza sales data into meaningful business insights and support data-driven decision-making.
+
+
+Screenshort :-https://github.com/sandeepyadav754/Pizza_selles_data-2024-25/blob/main/Screenshot%202026-11-19%20205436.png
