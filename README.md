@@ -1,77 +1,94 @@
 # Pizza_selles_data-2024-25
- Pizza Sales Analysis Dashboard (2024–25)
-
 1. Project Title
-
-Pizza Sales Analysis Dashboard (2024–25)
+Pizza Sales Analysis Using Databricks, PySpark, SQL & Power BI
 
 2. Short Description / Purpose
+This project focuses on building an end-to-end data pipeline and interactive business intelligence dashboard to analyze pizza sales data.
 
-This project focuses on analyzing pizza sales data to understand sales performance, customer preferences, restaurant performance, and monthly sales trends.
+I developed an ETL pipeline using Databricks and PySpark with a Medallion Architecture (Bronze, Silver, and Gold) to process raw data, followed by a Power BI dashboard to visualize sales performance and generate business insights.
 
-The goal is to transform raw sales data into meaningful insights using data processing, analysis, and visualization tools.
-
-3. Tech Stack
-
-Excel: Data cleaning and initial data preparation.
-
-SQL: Data querying, filtering, aggregation, and analysis.
+3. Technology Stack
+Excel: Initial data inspection and preparation.
 
 Python (PySpark): Data cleaning and transformation.
 
+SQL: Data querying and analysis.
+
 Apache Spark: Distributed data processing.
 
-Databricks: Data engineering and ETL pipeline development.
+Databricks: ETL pipeline development using Spark Declarative Pipelines (SDP).
 
-Power BI: Interactive dashboard creation and data visualization.
+Power BI: Interactive dashboard and data visualization.
 
 4. Data Source
+Kaggle – Pizza Sales Dataset (2024–2025)
 
-Kaggle Dataset: Pizza Sales Dataset (2024–2025).
+The dataset contains pizza sales information used to analyze orders, pizza types, sizes, payment categories, restaurants, and sales trends.
 
-The dataset was used to analyze pizza sales, restaurant performance, pizza categories, payment methods, and order trends.
-
-5. Features / Project Highlights
-
+5. Features & Project Highlights
 A. Business Problem
-
-The business needs to understand its pizza sales performance, identify popular pizza categories, analyze restaurant performance, and track monthly order trends.
+The business needs to understand pizza sales performance, identify popular pizza categories, compare restaurant performance, and analyze monthly order trends.
 
 B. Goal of the Dashboard
+To transform raw pizza sales data into meaningful business insights through an automated ETL pipeline and interactive Power BI dashboard.
 
-To build an interactive dashboard that helps businesses monitor sales performance, understand customer preferences, and make better business decisions.
+C. Databricks ETL Pipeline – Spark Declarative Pipelines (SDP)
+Developed a three-layer Medallion Architecture:
 
-C. Key Visuals
+1. Bronze Layer – raw_data
 
-Monthly Orders: Analyzes total orders month-wise to identify high- and low-performing months.
+Ingested raw pizza sales data.
 
-Pizza Type Analysis: Compares different pizza types and customer preferences.
+Created the initial pipeline table using @dp.table.
 
-Payment Category: Analyzes online and offline payment methods.
+Maintained the raw data as the starting point for processing.
 
-Pizza Size Analysis: Shows sales distribution across different pizza sizes.
+2. Silver Layer – silver_data_new
 
-Restaurant Performance: Compares restaurant performance across different locations.
+Cleaned and transformed raw data using PySpark.
 
-Highest Selling Pizza: Identifies the best-selling pizza categories.
+Applied data preparation and quality checks.
 
-Traffic Impact: Analyzes traffic levels and their relationship with restaurant and pizza performance.
+Created a materialized view using @dp.materialized_view.
 
-D. Business Impact and Insights
+3. Gold Layer – gold_data_new
 
-Identifies high-performing and low-performing months.
+Prepared business-ready data for reporting and analysis.
 
-Helps identify popular pizza categories and sizes.
+Created the final analytical layer using @dp.materialized_view.
 
-Provides insights into customer payment preferences.
+Used the processed data for Power BI reporting.
 
-Helps compare restaurant performance across locations.
+D. Power BI Dashboard – Key Visuals
+Monthly Orders: Identifies high- and low-performing months.
 
-Supports better sales planning, marketing strategies, and business decisions.
+Pizza Type: Analyzes different pizza categories.
+
+Payment Category: Compares online and offline payments.
+
+Pizza Size: Analyzes customer preferences by pizza size.
+
+Restaurant Performance: Compares restaurants across locations.
+
+Highest Selling Pizza: Identifies popular pizza categories.
+
+Traffic Impact: Visualizes traffic levels and their relationship with pizza types and restaurants.
+
+E. Business Impact & Insights
+Identifies monthly order trends and seasonal performance.
+
+Highlights popular pizza categories.
+
+Helps understand customer payment and size preferences.
+
+Provides restaurant-level performance comparisons.
+
+Supports sales planning, inventory management, and business decision-making.
 
 6. Project Outcome
+Successfully developed an end-to-end data processing pipeline using Databricks SDP and PySpark, following Medallion Architecture, and connected the processed data to an interactive Power BI dashboard for business analysis.
 
-Developed an interactive Power BI dashboard to convert raw pizza sales data into meaningful business insights and support data-driven decision-making.
+
 
 
 Screenshort :-https://github.com/sandeepyadav754/Pizza_selles_data-2024-25/blob/main/Screenshot%202026-11-19%20205436.png
